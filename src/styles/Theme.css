@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap');
+
+:root {
+  --bg: #FAF8FC;
+  --ink: #2A2438;
+  --ink-soft: #5C5468;
+
+  --rose: #D2A8C4;  
+  --sky: #5C87C8;    
+  --gold: #B9A8D6;  
+  --mauve: #D0C5CF; 
+
+  --glass: rgba(248, 244, 250, 0.45);
+  --glass-border: rgba(255, 255, 255, 0.85);
+
+  --font-display: 'Quicksand', sans-serif;
+  --font-body: 'Manrope', sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 100px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(28px, 4vw, 38px);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    margin-bottom: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

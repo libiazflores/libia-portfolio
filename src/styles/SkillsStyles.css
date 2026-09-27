@@ -1,0 +1,44 @@
+.skills-section {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.projects-grid, .skills-bento {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 24px;
+}
+
+.skill-card {
+  padding: 32px;
+}
+
+.skill-card h3 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.glass-card-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 480px) {
+  .skills-section {
+    padding: 24px calc(16px + var(--right-gutter, 0px)) 56px 16px;
+  }
+
+  .skills-bento {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-card {
+    padding: 24px;
+  }
+}

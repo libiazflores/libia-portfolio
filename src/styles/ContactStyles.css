@@ -1,0 +1,102 @@
+.contact-section {
+  position: relative;
+  z-index: 50; 
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 60px 24px; 
+}
+
+.contact-card {
+  padding: 80px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  z-index: 55;
+}
+
+.contact-card p {
+  max-width: 500px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.contact-links {
+  position: relative;
+  z-index: 60; 
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-family: var(--font-display, sans-serif);
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative; 
+}
+
+.btn--primary {
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+}
+
+.btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  background: var(--rose);
+  border-color: var(--rose);
+  color: #ffffff;
+}
+
+.btn--ghost {
+  background: rgba(255, 255, 255, 0.4);
+  color: var(--ink);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.btn--ghost:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(43, 34, 51, 0.08);
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--bg);
+}
+
+@media (max-width: 640px) {
+  .contact-section {
+    padding: 32px calc(16px + var(--right-gutter, 0px)) 80px 16px;
+  }
+
+  .contact-card {
+    padding: 48px 24px;
+  }
+}
+
+@media (max-width: 420px) {
+  .contact-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-links .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
