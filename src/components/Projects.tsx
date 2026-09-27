@@ -2,26 +2,19 @@ import { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
 import '../styles/ProjectsStyles.css';
 
-import visualizeVideo from '../assets/visualize_video.mp4';
 import iphonePhoto1 from '../assets/iphone_photo1.svg';
 import iphonePhoto2 from '../assets/iphone_photo2.svg';
 import visualizeLogo from '../assets/VisualizeLogo.svg';
 import visualizeModalCover from '../assets/VisualizeBackground.svg';
 
-import motionLabVideo1 from '../assets/MotionLab_VideoStudent.mp4';
-import motionLabVideo2 from '../assets/MotionLab_VideoTeacher.mp4';
 import motionLabPhoto1 from '../assets/MotionLab_Photo1.svg';
 import motionLabPhoto2 from '../assets/MotionLab_Photo2.svg';
 
-import employeeVideo1 from '../assets/EmployeeSystem_VideoAdmin.mp4';
 import employeePhoto1 from '../assets/EmployeeSystem_Photo1.png';
 import employeePhoto2 from '../assets/EmployeeSystem_Photo2.png';
-import employeeVideo2 from '../assets/EmployeeSystem_VideoPersonal.mp4';
 
-import mathcraftVideo1 from '../assets/MathCraft_VideoGenerator.mp4';
 import mathcraftPhoto1 from '../assets/MathCraft_Photo1.png';
 import mathcraftPhoto2 from '../assets/MathCraft_Photo2.png';
-import mathcraftVideo2 from '../assets/MathCraft_VideoResults.mp4';
 
 type Project = {
   title: string;
@@ -82,10 +75,10 @@ const PROJECTS: Project[] = [
     tags: ['Django', 'React', 'TypeScript', 'Supabase', 'Python', 'LLMs'],
     href: 'https://github.com/CREATE-Lab-McGill/GenAI_26',
     gallery: [
-      mathcraftVideo1,
+      'https://res.cloudinary.com/ukynoggq/video/upload/v1790486706/MathCraft_VideoGenerator.mp4',
       mathcraftPhoto1,
       mathcraftPhoto2,
-      mathcraftVideo2,
+      'https://res.cloudinary.com/ukynoggq/video/upload/v1790487225/MathCraft_VideoResult.mp4',
     ],
     showcaseType: 'desktop',
   },
@@ -142,7 +135,7 @@ const PROJECTS: Project[] = [
     href: 'https://github.com/libiazflores/visualize-ios',
     cardImageUrl: visualizeLogo,
     logoUrl: visualizeModalCover,
-    mobileVideo: visualizeVideo,
+    mobileVideo: 'https://res.cloudinary.com/ukynoggq/video/upload/v1790486714/Visualize_Video.mp4',
     gallery: [iphonePhoto1, iphonePhoto2, iphonePhoto1],
     showcaseType: 'mobile',
   },
@@ -196,10 +189,10 @@ const PROJECTS: Project[] = [
     ],
     href: 'https://github.com/libiazflores/motionlab-fullstack',
     gallery: [
-      motionLabVideo1,
+      'https://res.cloudinary.com/ukynoggq/video/upload/v1790486700/MotionLab_VideoStudent.mp4',
       motionLabPhoto1,
       motionLabPhoto2,
-      motionLabVideo2,
+      'https://res.cloudinary.com/ukynoggq/video/upload/v1790486698/MotionLab_VideoTeacher.mp4',
     ],
     showcaseType: 'tablet',
   },
@@ -245,10 +238,10 @@ const PROJECTS: Project[] = [
     tags: ['React', 'TypeScript', 'Tailwind CSS', 'Node.js'],
     href: 'https://github.com/libiazflores/hies-frontend',
     gallery: [
-      employeeVideo1,
+      'https://res.cloudinary.com/ukynoggq/video/upload/v1790486677/EmployeeSystem_VideoAdmin.mp4',
       employeePhoto1,
       employeePhoto2,
-      employeeVideo2,
+      'https://res.cloudinary.com/ukynoggq/video/upload/v1790486658/EmployeeSystem_VideoPersonal.mp4',
     ],
     showcaseType: 'desktop',
   },
