@@ -7,7 +7,7 @@ export default function Hero() {
         <h1 className="hero-title">Libia Zulema Flores Valenzuela</h1>
 
         <p className="hero-subheader">
-          Computer Science Student | Software Developer
+          Final-Year Computer Science Student | Software Developer
         </p>
 
         <p className="hero-subtitle">
