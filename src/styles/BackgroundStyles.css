@@ -1,3 +1,7 @@
+body {
+  background: #f2edfa;
+}
+
 .aurora {
   position: fixed;
   inset: 0;
@@ -22,8 +26,7 @@
   position: absolute;
   border-radius: 50%;
   filter: blur(70px);
-  opacity: 0.55; /* Un toque extra de opacidad para que resalten al moverse */
-  /* Redujimos el tiempo de 26s a 18s para que el movimiento sea evidente al instante */
+  opacity: 0.55; 
   animation: drift 18s ease-in-out infinite;
 }
 
@@ -41,7 +44,7 @@
   right: -10vw;
   top: 8vw;
   background: var(--sky);
-  animation-delay: -6s; /* Reajustado para el nuevo ciclo de 18s */
+  animation-delay: -6s;
 }
 
 .blob--gold {
@@ -50,10 +53,10 @@
   left: 22vw;
   bottom: -12vw;
   background: var(--gold);
-  animation-delay: -12s; /* Reajustado para el nuevo ciclo de 18s */
+  animation-delay: -12s; 
 }
 
-/* AQUÍ ESTÁ LA MAGIA: Distancias de viaje mucho más largas (de 3vw a 12vw) y un poco de rotación fluida */
+
 @keyframes drift {
   0%, 100% { 
     transform: translate(0, 0) scale(1) rotate(0deg); 
