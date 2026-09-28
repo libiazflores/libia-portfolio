@@ -11,7 +11,7 @@ const TIMELINE = [
     year: 'Aug 2023 — Jun 2026',
     title: '6-Time Academic Excellence Awardee',
     category: 'Award',
-    desc: 'Received the Academic Excellence recognition for six semesters while pursuing a B.S. in Computer Science and Technology at Tec de Monterrey, with a 4.0/4.0 GPA.',
+    desc: 'Received the Academic Excellence recognition in all six semesters where the award has been granted during my B.S. in Computer Science and Technology at Tec de Monterrey, with a 4.0/4.0 GPA.',
   },
   {
     year: 'Feb 2025 — Dec 2025',

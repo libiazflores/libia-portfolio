@@ -39,7 +39,7 @@ const PROJECTS: Project[] = [
     description:
       'An AI-powered full-stack web platform for streamlining mathematical content creation for secondary mathematics educators.',
     longDescription:
-      'Developed during a Mitacs Globalink Research Internship at McGill University, with the project extended for an additional month to continue development. MathCraft streamlines educational content creation for secondary mathematics teachers by integrating Large Language Models with mathematical verification engines. The platform supports end-to-end workflows for generating, reviewing, editing, and refining problems, with LaTeX formatting and automated document export.',
+      'Developed during a Mitacs Globalink Research Internship at McGill University, with an additional month-long extension to continue development of the project. MathCraft streamlines educational content creation for secondary mathematics teachers by integrating Large Language Models with mathematical verification engines. The platform supports end-to-end workflows for generating, reviewing, editing, and refining problems, with LaTeX formatting and automated document export.',
     features: [
       {
         title: 'AI Problem Generation',
